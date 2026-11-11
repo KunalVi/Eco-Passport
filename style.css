@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+}
+
+.Pass-con {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+    color: #f3f4f6;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(14, 165, 233, 0.25);
+    border: 2px solid #0ea5e9;
+    position: relative;
+    overflow: hidden; 
+}
+
+.Pass-con::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(rgba(14, 165, 233, 0) 50%, rgba(0, 0, 0, 0.15) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.Pass-Top header {
+    text-align: center;
+    border-bottom: 2px dashed #374151;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.Pass-Top header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: #38bdf8;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+
+}
+
+.Pass-Top header p {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: 5px;
+
+}
+
+.clearance-body h2 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+#question-text {
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f8fafc;
+
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 25px;
+}
+
+.quiz-btn {
+    background-color: #1e293b;
+    color: #38dbf8;
+    border: 1px solid #334155;
+    padding: 12px 15px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease; 
+}
+
+.quiz-btn:hover {
+    background-color: #0ea5e9;
+    color: #0b0f19;
+    border-color: #38bdf8;
+    transform: translateX(4px);
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.5);
+
+}
+
+.passport-page-btn {
+    border-top: 2px dashed #374151;
+    padding-top: 20px;
+
+}
+
+.passport-page-btn h2 {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+
+}
+
+.pass-data-spared {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.stats-panel {
+    background-color: #111827;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border-left: 4px solid #10b981;
+    border-top: 1px solid #334155;
+    border-right: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+
+}
+
+.stas-label {
+    font-size: 1.3rem;
+    color: #34d399;
+    letter-spacing: 1.5px;
+
+}
+
+.score-readout {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #34d399;
+    text-shadow: 0 0 6px rgba(52, 211, 153, 0.3);
+
+}
+
+.stamps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15;
+
+}
+
+.vintage-stamp-card.stamp-processed {
+    border-color: #10b981;
+}
+
+.stamp-ink-circle {
+    border: 2px solid #10b981;
+    background-color: rgba(16, 185, 129, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 95px;
+    height: 95px;
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    box-shadow: inset 0 0 8px rgba(16, 185, 129, 0.2);
+}
+
+.stamp-hdr {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #34d399;
+    letter-spacing: 0.5px;
+
+}
+
+.stamp-val {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #f3f4f6;
+
+}
+
+.stamp-ftr {
+    font-size: 0.45rem;
+    color: #9ca3af;
+
+}
+
+.stamp-history-details {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+    padding-left: 12px;
+    flex-grow: 1; 
+}
+
+.heightlight-text {
+    font-weight: bold;
+    color: #38bdf8;
+    
+}
