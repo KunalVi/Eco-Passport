@@ -30,10 +30,13 @@ const stampsLogBox = document.getElementById("stamps-log-box")
 
 function loadQuestion() {
     optionsBox.innerHTML = "";
-
-    if (currentQuestion >= questions.length) {
-        questionText.textContent = "Passport Clearance Complete!! All the checks processed. "
+   
+   
+    if (currentQuestionIndex >= questions.length) {
+        questionText.textContent = "Passport Clearance Complete!! All the checks processed. ";
+        return;
     }
+
     let currentQuestion = questions[currentQuestionIndex];
     questionText.textContent = currentQuestion.text;
 
@@ -44,7 +47,7 @@ function loadQuestion() {
         button.addEventListener("click", () => {
             handleAnswer(
                 option.points,
-                "Stamp-processed",
+                "stamp-processed",
                 "OFFICIAL CLEARANCE",
                 option.stamp
             );
