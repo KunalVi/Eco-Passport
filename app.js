@@ -47,6 +47,8 @@ function loadQuestion() {
         button.addEventListener("click", () => {
             handleAnswer(
                 option.points,
+                currentQuestion.text,
+                option.text,
                 "stamp-processed",
                 "OFFICIAL CLEARANCE",
                 option.stamp
